@@ -13,5 +13,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Test gh api
-        run: gh api --help
+      - name: Get public key
+        run: gh api /repos/chancancode/test-gha/actions/secrets/public-key
