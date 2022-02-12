@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Test
 
 on:
@@ -14,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get public key
-        run: gh api /repos/chancancode/test-gha/actions/secrets/public-key
+        run: gh login --host github.com
